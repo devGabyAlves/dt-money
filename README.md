@@ -30,7 +30,7 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
 1. **Clone o Repositório:**
    ```bash
    git clone https://github.com/seu-usuario/dt-money.git
-   cd TimeSheet
+   cd dt-money
 
 2. **Instale as dependêndencias:**
     ```bash
