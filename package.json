@@ -1,5 +1,5 @@
 {
-  "name": "dt-money",
+  "name": "GSA MM",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,14 +12,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@hookform/resolvers": "^3.3.2",
+    "@mui/material": "^5.16.0",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-radio-group": "^1.1.3",
+    "@types/react-router-dom": "^5.3.3",
     "axios": "^1.6.2",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.2",
+    "react-router-dom": "^6.24.1",
     "scheduler": "^0.23.0",
     "styled-components": "^6.1.1",
     "use-context-selector": "^1.4.1",
