@@ -1,4 +1,3 @@
-import React from 'react'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Transactions } from './src/pages/Transactons';
 import { PasswordRecovery } from './src/pages/Login/passwordRecovery';
