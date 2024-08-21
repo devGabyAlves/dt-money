@@ -1,5 +1,6 @@
 import { styled } from '@mui/material/styles';
 import { TextField } from '@mui/material';
+import loginBackground from '../../assets/login_background.png';
 
 export const Background = styled('div')({
   display: 'flex',
@@ -27,11 +28,15 @@ export const LeftPanel = styled('div')({
 export const Logo = styled('img')({
   width: '150px',
   marginBottom: '2rem',
+  '@media (max-width: 768px)': {
+    width: '120px',
+    marginBottom: '1.5rem',
+  },
 });
 
 export const RightPanel = styled('div')({
   flex: 1,
-  backgroundImage: 'url(https://i.ibb.co/zJMQqV1/image-dt-money.png)', 
+  backgroundImage: `url(${loginBackground})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   '@media (max-width: 768px)': {
@@ -43,26 +48,31 @@ export const StyledTextField = styled(TextField)({
   '& .MuiInputBase-input': {
     color: '#ffffff',
     backgroundColor: '#444343',
-    borderRadius: '4px',
+    borderRadius: '20px',  
     padding: '10px',
+    transition: 'background-color 0.3s ease',
+    '&:hover': {
+      backgroundColor: '#5a5a5a',
+    },
   },
   '& .MuiInputLabel-root': {
-    color: 'rgba(255, 255, 255, 0.7)',
+    color: 'rgba(255, 255, 255, 0.7)'
   },
   '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
-    borderColor: 'rgba(255, 255, 255, 0.7)',
-    borderRadius: '4px',
+    borderColor: 'transparent',  
+    borderRadius: '20px',  
+    transition: 'border-color 0.3s ease',
   },
   '& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
-    borderColor: '#ffffff',
+    borderColor: 'transparent',  
   },
   '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-    borderColor: '#ffffff',
+    borderColor: 'transparent', 
   },
   '& .MuiOutlinedInput-root': {
     '& fieldset': {
       backgroundColor: '#444343',
-      borderRadius: '4px',
+      borderRadius: '20px',  
     },
   },
 });
